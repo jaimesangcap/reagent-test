@@ -17,7 +17,7 @@
 ;; -------------------------
 ;; Initialize app
 
-(defn mount-root []
+(defn ^:dev/after-load mount-root []
   (reagent/render [home-page] (.getElementById js/document "app")))
 
 (defn init []
